@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url(../img/space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.planets{
+    background-image: url(../img/space.jpg);
+}
+
+
+nav {
+    width: 100%;
+    height: 50px;
+    background: #37036b;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .menu-btn {
+    width: 50px;
+}
+
+.slider {
+    height: 100vh;
+    width: 400px;
+    position: absolute;
+    right: -400px;
+    background: rgb(56, 56, 56);
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+}
+
+.slider a {
+    color: white;
+    margin: 10px 0;
+}
+
+.active {
+    right: 0;
+}
+
+.open-button {
+    background-color: #3d3b3b;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 34px;
+    right: 18px;
+    width: 212px;
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 88px;
+    right: 20px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+  
+   
+.form-container {
+    max-width: 200px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+  
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 5px;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+  
+  
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+  
+.form-container .btn {
+    background-color: #04aa12ba;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 105%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+  
+.form-container .cancel {
+    background-color: #ff0e0e;
+}
+  
+  
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+.box{
+    width: 350px;
+    height: 80px;
+    background-color: rgb(64, 35, 35);
+    margin: 50px;
+    display: flex;
+    margin-left: 900px;
+}
+.fa-envelope{
+    margin: 20px 40px;
+}
+.mail{
+    margin-top: 20px;
+}
+.fa-mobile-screen{
+    margin-top: 50px;
+    margin-left: -236px;
+
+}
+.mobile{
+    margin-top: 50px;
+    margin-left: 46px;
+}
+.gallery {
+    margin: 40px;
+    margin-bottom: 0px;
+    border: 1px solid rgb(255, 255, 255);
+    display:inline-flex;
+    width: 250px;
+}
+  
+.gallery img {
+    width: 90%;
+    
+}
+  
+.galley desc {
+    padding: 0px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.slides-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel{
+  width: 500px;
+  height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.slides{
+  width: 500%;
+  height: 300px;
+  display: flex;
+  
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+  
+}
+
+.slide img {
+  height: 300px;
+}
+
+.first{
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+    background: url('../img/Venus.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.second{
+    background: url('../img/Mars.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center
+}
+.third{
+    background: url('../img/Mercury.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center
+}
+@keyframes slide {
+    0%{
+        margin-left: 0;
+    }
+    16%{
+        margin-left: 0;
+    }
+    32%{
+        margin-left: -20%;
+    }
+    48%{
+        margin-left: -20%;
+    }
+    64%{
+        margin-left: -40%;
+    }
+    80%{
+        margin-left: -40%;
+    }
+    100%{
+        margin-left: 0;
+    }
+}

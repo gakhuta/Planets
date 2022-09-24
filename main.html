@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>planets</title>
+</head>
+<body>
+    <header>
+        <nav id="nav"></nav>
+    </header>
+        <main>
+            <button class="open-button" onclick="openForm()">Message</button>
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                            
+                  <label id="msg"><b>Message</b></label>
+                  <textarea placeholder="Text here your message..." name="msg" required></textarea>
+              
+                  <button type="submit" class="btn">Send</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+        </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
