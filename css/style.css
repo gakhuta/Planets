@@ -27,7 +27,23 @@ nav {
     height: 50px;
     background: #37036b;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+nav ul li {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: white;
 }
 
 nav .menu-btn {
